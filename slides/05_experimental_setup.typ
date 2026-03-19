@@ -16,7 +16,7 @@
       radius: 5pt,
       inset: 12pt,
     )[
-      #text(weight: "bold", fill: c-navy)[📄 Dataset]
+      #text(weight: "bold", fill: c-navy)[Dataset]
       #v(6pt)
       *NQ-open* (Natural Questions)
       #v(4pt)
@@ -33,7 +33,7 @@
       radius: 5pt,
       inset: 12pt,
     )[
-      #text(weight: "bold", fill: c-green.darken(20%))[🤖 Generators]
+      #text(weight: "bold", fill: c-green.darken(20%))[Generators]
       #v(6pt)
       - *Llama2-7b* (main model)
       - Phi-2
@@ -51,7 +51,7 @@
       radius: 5pt,
       inset: 12pt,
     )[
-      #text(weight: "bold", fill: c-orange.darken(20%))[🔍 Retrievers]
+      #text(weight: "bold", fill: c-orange.darken(20%))[Retrievers]
       #v(6pt)
       - *Contriever* (dense, bi-encoder)
       - *BM25* (sparse, term-based)
@@ -70,12 +70,12 @@
     width: 100%,
   )[
     #grid(
-      columns: (auto, 1fr, auto, 1fr),
+      columns: (auto, 1fr),
       gutter: 8pt,
       align: horizon,
       text(weight: "bold")[Metric:],
-      [Accuracy — at least one reference answer must appear in the generated response],
-      text(weight: "bold")[Significance:],
-      [Wilcoxon signed-rank test ($p < 0.01$) throughout],
+      [Accuracy],
+      // text(weight: "bold")[Significance:],
+      // [Wilcoxon signed-rank test ($p < 0.01$) throughout],
     )
   ]

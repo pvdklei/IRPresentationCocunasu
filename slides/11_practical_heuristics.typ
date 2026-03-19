@@ -17,8 +17,7 @@
 
       - Retrieve *3–5 documents* with your IR system
       - Place them *near the query* in the prompt
-      - Fill the remaining context with *random documents*
-      - Put random filler *far from the query*
+      - Fill the remaining context with *random documents*, far from the query
       #v(8pt)
       Result: #prompt("I", "■ ■ ■", "▲/●", "Q")
     ],
@@ -36,16 +35,13 @@
         #set text(size: 15pt)
         More retrieved docs → increasing chance of *distracting* content → accuracy degrades.
 
-        #v(6pt)
-        The sweet spot for the studied setup: *$k = 3$ to $5$*.
       ]
 
-      #v(10pt)
+      // #v(10pt)
 
-      *Key insight for the field:*
-      #v(6pt)
-      #finding-box[
-        Retrieval quality for RAG is *not* the same as classic IR relevance ranking. A retriever optimised purely for top-$k$ relevance may *hurt* the downstream LLM. New retrieval objectives are needed.
-      ]
+      // *Key insight for the field:*
+      // #v(6pt)
+      // #finding-box[
+      //  Retrieval quality for RAG is *not* the same as classic IR relevance ranking. A retriever optimised purely for top-$k$ relevance may *hurt* the downstream LLM. New retrieval objectives are needed.]
     ],
   )
