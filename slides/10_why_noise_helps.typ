@@ -1,51 +1,23 @@
 // ============================================================
-//  slides/10_why_noise_helps.typ  –  Attention entropy hypothesis
+//  slides/10_why_noise_helps.typ  –  Entropy collapse background
 // ============================================================
 #import "../helpers.typ": *
 
-== Why Does Noise Help? The Attention Entropy Hypothesis
+== Why Does Noise Help? Entropy Collapse
 
-  #grid(
-    columns: (1fr, 1fr),
-    gutter: 24pt,
+#set text(size: 16pt)
 
-    // ── left ──
-    [
-      *Attention entropy experiment:*
-      #v(6pt)
-      Compare #prompt("I", "★", "Q") vs #prompt("I", "■■", "★", "Q"):
+*From prior work* (Attanasio et al., 2022; Hoffmann et al., 2023):
 
-      #v(6pt)
-      #block(
-        fill: c-green.lighten(82%),
-        stroke: c-green + 0.8pt,
-        radius: 4pt,
-        inset: 10pt,
-      )[
-        Attention entropy *increases ≈ 3×* when random documents are added.
-      ]
+#v(4pt)
+- There are cases where pathologically *low attention entropy* causes LLMs to generate degenerate outputs with a sharp decrease in performance
+- These episodes are called *entropy collapse*
+- Low entropy = the model focuses too narrowly on a small region of the context, ignoring relevant information
 
-      #v(10pt)
+#v(14pt)
 
-      *What is "entropy collapse"?*
-      #v(4pt)
-      Prior work (Attanasio et al., 2022; Hoffmann et al., 2023) shows that:
-
-      #v(4pt)
-      - Pathologically *low* attention entropy → degenerate, repetitive outputs
-      - Also linked to worse factual grounding
-    ],
-
-    // ── right ──
-    [
-      #finding-box[
-        *Hypothesis:* random documents act as "attention anchors," preventing the model from collapsing onto a narrow region of the context. Higher entropy = more distributed, more robust attention → better answers.
-      ]
-
-      #v(10pt)
-
-      #warn-box[
-        This is an *open hypothesis*, not a proven mechanism. The paper shows *correlation* (noise → higher entropy → better accuracy) but not causation. Explicitly flagged as future work.
-      ]
-    ],
-  )
+*The authors' hypothesis:*
+#v(4pt)
+#key-box[
+  By adding random documents to the context, we are *better conditioning* the generative function $p_theta (y | dot, d)$, inducing enhanced accuracy. Random documents may act as "attention anchors" that *prevent entropy collapse* — spreading the model's attention more evenly and reducing degenerate focus on irrelevant passages.
+]
