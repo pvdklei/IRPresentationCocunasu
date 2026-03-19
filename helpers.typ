@@ -23,10 +23,10 @@
   baseline: 20%,
 )[#text(fill: border, weight: "bold", size: 0.88em)[#label]]
 
-#let tag-gold        = _dtag(c-gold.lighten(72%),   c-gold,   "★ Gold")
-#let tag-relevant    = _dtag(c-green.lighten(72%),  c-green,  "● Relevant")
-#let tag-distracting = _dtag(c-red.lighten(72%),    c-red,    "▲ Distracting")
-#let tag-random      = _dtag(c-muted.lighten(55%),  c-muted,  "■ Random/Noise")
+#let tag-gold        = _dtag(c-gold.lighten(72%),   c-gold,   "G (Gold)")
+#let tag-relevant    = _dtag(c-green.lighten(72%),  c-green,  "R (Relevant)")
+#let tag-distracting = _dtag(c-red.lighten(72%),    c-red,    "D (Distracting)")
+#let tag-random      = _dtag(c-muted.lighten(55%),  c-muted,  "N (Random/Noise)")
 
 // ── Callout boxes ────────────────────────────────────────────────
 #let info-box(body) = block(
