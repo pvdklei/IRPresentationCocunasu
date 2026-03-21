@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Finding 1: Position of the Gold Document Matters
+== Experiment 1: Gold Position
 
   #grid(
     columns: (1fr),

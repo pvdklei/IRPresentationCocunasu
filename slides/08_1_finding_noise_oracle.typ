@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Finding 3: Random Noise #emph[Improves] Accuracy — Oracle Setting
+== Experiment 3: Noise Helps (Oracle)
 
   #grid(
     columns: (1fr),

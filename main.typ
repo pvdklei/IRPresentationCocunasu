@@ -17,8 +17,8 @@
   config-info(
     title:       [The Power of Noise: \ Redefining Retrieval for RAG Systems],
     subtitle:    [Cuconasu, Trappolini, Siciliano, Filice, Campagnano, Maarek, Tonellotto, Silvestri],
-    date:        [IR1 · 2025–2026],
-    institution: [Master AI — Information Retrieval 1],
+    date:        [IR1 2025–2026],
+    institution: [Master AI - Information Retrieval 1],
   ),
   config-common(
     slide-level: 2,
@@ -39,6 +39,7 @@
 #include "slides/03_rag_overview.typ"
 #include "slides/03b_not_true.typ"
 #include "slides/03a_research_question.typ"
+#include "slides/03c_outline.typ"
 #include "slides/04_0_document_types.typ"
 #include "slides/04_1_document_types.typ"
 #include "slides/05_experimental_setup.typ"
@@ -62,3 +63,4 @@
 #include "slides/11_practical_heuristics.typ"
 #include "slides/12_0_course_connection.typ"
 #include "slides/13_conclusion.typ"
+#include "slides/14_questions.typ"

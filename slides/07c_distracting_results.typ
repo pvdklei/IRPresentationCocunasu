@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Distracting Documents — Results
+== Experiment 2: Distraction Results
 
 *Baseline comparison (Llama2, Contriever, Near):*
 
@@ -18,11 +18,11 @@
   #grid(
     columns: (1fr, auto),
     gutter: 6pt,
-    [Only gold #prompt("I", "★", "Q")],
+    [Only gold #prompt("I", "G", "Q")],
     text(fill: c-green, weight: "bold")[0.564],
-    [Gold + 1 distracting #prompt("I", "▲", "★", "Q")],
+    [Gold + 1 distracting #prompt("I", "D", "G", "Q")],
     text(fill: c-red, weight: "bold")[↓ 0.428],
-    [Gold + 2 distracting #prompt("I", "▲▲", "★", "Q")],
+    [Gold + 2 distracting #prompt("I", "DD", "G", "Q")],
     text(fill: c-red, weight: "bold")[↓↓ 0.397],
   )
 ]

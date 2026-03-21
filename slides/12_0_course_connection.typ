@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Connecting to the Course
+== Course Connection
 
   #grid(
     columns: (1fr),

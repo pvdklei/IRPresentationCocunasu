@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Finding 2: Distracting Documents
+== Experiment 2: Distracting Documents
 
 #set text(size: 16pt)
 

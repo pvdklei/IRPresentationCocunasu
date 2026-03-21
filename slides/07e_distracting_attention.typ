@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Distracting Documents — Explanation
+== Experiment 2: Distraction Explanation
 
 #grid(
   columns: (1fr, 1fr),
@@ -12,7 +12,7 @@
   [
     #image("../images/figure3_attention_distraction.png", width: 85%)
     #v(2pt)
-    #text(size: 11pt, fill: c-muted)[Figure 3: Attention from answer tokens to context documents in #prompt("I", "▲...", "★", "Q") (Llama2).]
+    #text(size: 11pt, fill: c-muted)[Figure 3: Attention from answer tokens to context documents in #prompt("I", "D...", "G", "Q") (Llama2).]
   ],
 
   [
@@ -23,7 +23,7 @@
     #v(6pt)
 
     #info-box[
-      Semantically aligned documents compete for the model's attention — the LLM cannot distinguish between *relevant-with-answer* and *relevant-without-answer*.
+      Semantically aligned documents compete for the model's attention. The LLM cannot distinguish between *relevant-with-answer* and *relevant-without-answer*.
     ]
 
     #v(6pt)

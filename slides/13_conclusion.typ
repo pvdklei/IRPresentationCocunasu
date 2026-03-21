@@ -11,19 +11,15 @@
 
     // ── left: three takeaways ──
     [
-      *Three key findings — remember these:*
+      *Three key findings - remember these:*
 
       #v(6pt)
-      - *Position matters.* Place relevant docs *near the query* — the LLM cannot attend well to distant context.
+      - *Position matters.* Place relevant docs *near the query*. The LLM cannot attend well to distant context.
       - *Distracting docs hurt.* Non-relevant top-$k$ docs *reduce* accuracy.
-      - *Noise helps.* Random docs *improve* accuracy by up to 35–44%.
+      - *Noise helps.* Random docs *improve* accuracy by up to 35-44%.
 
       #v(8pt)
-      #finding-box[
-        *Published at SIGIR 2024.* Code & data released at \
-        #text(font: ("Courier New", "Courier", "Monaco"), size: 13pt)[github.com/florin-git/The-Power-of-Noise] \
-        #text(size: 13pt, fill: c-muted)[129 citations as of Feb 2026.]
-      ]
+      #text(size: 13pt, fill: c-muted)[Code & data: #text(font: ("Courier New", "Courier", "Monaco"))[github.com/florin-git/The-Power-of-Noise]]
     ],
 
     // ── right: open questions ──
@@ -35,6 +31,6 @@
       - Which properties make a document useful as filler?
       - Can we *train* a retriever with an objective aligned to LLM accuracy, not just relevance?
       - Do these findings hold for larger LLMs (13B, 70B)?
-      - How do results change with instruction-tuned / RLHF models?
+      - Do they generalize to modern frontier models (GPT-4o, Gemini 2.5, Claude 4)?
     ],
   )

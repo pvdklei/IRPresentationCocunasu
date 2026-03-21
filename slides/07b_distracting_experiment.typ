@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Distracting Documents — Experiment
+== Experiment 2: Distraction Setup
 
 *Sub-question:*
 #v(3pt)
@@ -16,6 +16,6 @@
 *Setup:*
 #v(3pt)
 - Oracle setting: the gold document #tag-gold is always in the prompt
-- Add 0–10 distracting documents (high retrieval score, no answer)
+- Add 0-10 distracting documents (high retrieval score, no answer)
 - Test across all four LLMs and three positions (far, mid, near)
-- Schematically: #prompt("I", "▲...", "★", "Q")
+- Schematically: #prompt("I", "D...", "G", "Q")

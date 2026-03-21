@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Why Does Noise Help? Entropy Collapse
+== Experiments 3 & 4: Entropy Collapse
 
 #set text(size: 16pt)
 
@@ -19,5 +19,5 @@
 *The authors' hypothesis:*
 #v(4pt)
 #key-box[
-  By adding random documents to the context, we are *better conditioning* the generative function $p_theta (y | dot, d)$, inducing enhanced accuracy. Random documents may act as "attention anchors" that *prevent entropy collapse* — spreading the model's attention more evenly and reducing degenerate focus on irrelevant passages.
+  By adding random documents to the context, we are *better conditioning* the generative function $p_theta (y | dot, d)$, inducing enhanced accuracy. Random documents may act as "attention anchors" that *prevent entropy collapse*, spreading the model's attention more evenly and reducing degenerate focus on irrelevant passages.
 ]

@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Entropy Collapse — Evidence
+== Experiments 3 & 4: Entropy Evidence
 
 #grid(
   columns: (1fr, 1.4fr),
@@ -30,8 +30,8 @@
     #v(4pt)
     Compare the attention entropy of:
     #v(2pt)
-    - Only gold: #prompt("I", "★", "Q")
-    - With noise: #prompt("I", "■■", "★", "Q")
+    - Only gold: #prompt("I", "G", "Q")
+    - With noise: #prompt("I", "NN", "G", "Q")
 
     #v(8pt)
 

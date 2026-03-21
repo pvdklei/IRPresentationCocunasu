@@ -3,11 +3,11 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Randomness in Practice — Detailed Results
+== Experiment 4: Detailed Results
 
 #set text(size: 11pt)
 
-*Table 3 — Llama2:* Wikipedia noise + retrieved docs (Contriever vs BM25)
+*Table 3 - Llama2:* Wikipedia noise + retrieved docs (Contriever vs BM25)
 #v(1pt)
 #image("../images/table3_random_in_practise.png", width: 100%)
 
@@ -16,9 +16,9 @@
   Rows = random docs added, columns = retrieved docs. Bold = best per column. (\*) = not significant vs. baseline.
 ]
 
-== Randomness in Practice — Detailed Results (Falcon)
+== Experiment 4: Detailed Results (Falcon)
 
-*Table 5 — Falcon-7b:* Reddit noise + retrieved docs #prompt("I", "■■■", "▲/●/★", "Q")
+*Table 5 - Falcon-7b:* Reddit noise + retrieved docs #prompt("I", "NNN", "D/R/G", "Q")
 
 #v(4pt)
 
@@ -33,13 +33,14 @@
   [
     #set text(size: 14pt)
     #v(6pt)
-    - Falcon *did not* benefit from noise in the oracle setting
-    - In the realistic setting, noise *does* improve Falcon — consistently across all configurations
-    - Confirms that the noise benefit generalises beyond the oracle experiments
+    - Tested on Reddit data (Webis-TLDR-17) as noise source
+    - Most values marked (\*), meaning improvements are *statistically significant* vs. baseline
+    - Best accuracy at 5 retrieved + 3 random docs: *0.2118*
+    - Context window limit (2048 tokens) restricts max configurations
 
     #v(8pt)
-    #finding-box[
-      The practical benefit of noise is *more general* than oracle results suggested — it extends to models that previously seemed unresponsive to noise.
+    #text(size: 13pt, fill: c-muted)[
+      Falcon's 2048 token context window means fewer document combinations can be tested compared to Llama2 (4096 tokens).
     ]
   ],
 )

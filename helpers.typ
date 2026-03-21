@@ -89,6 +89,9 @@
   baseline: 20%,
 )[#text(font: ("Courier New", "Courier", "Monaco"), size: 0.88em)[#("[" + parts.pos().join(", ") + "]")]]
 
+// ── Finding label ────────────────────────────────────────────────
+#let finding-label(label) = text(fill: c-blue, size: 0.7em, weight: "regular")[#label]
+
 // ── Small accuracy delta helper ──────────────────────────────────
 #let up(pct)   = text(fill: c-green, weight: "bold")[+#pct%]
 #let down(pct) = text(fill: c-red,   weight: "bold")[−#pct%]

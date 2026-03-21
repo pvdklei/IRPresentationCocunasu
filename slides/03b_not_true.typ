@@ -16,7 +16,7 @@
 #v(14pt)
 
 #info-box[
-  We already discussed this in class — and this paper was referenced as evidence that common retrieval assumptions break down in the RAG setting.
+  We already discussed this in class, and this paper was referenced as evidence that common retrieval assumptions break down in the RAG setting.
 ]
 
 #v(10pt)

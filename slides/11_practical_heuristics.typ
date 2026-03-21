@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Practical Heuristics from the Paper
+== Experiments 1-4: Practical Heuristics
 
   #v(4pt)
   #grid(
@@ -15,7 +15,7 @@
       *Proposed retrieval strategy:*
       #v(10pt)
 
-      - Retrieve *3–5 documents* with your IR system
+      - Retrieve *3-5 documents* with your IR system
       - Place them *near the query* in the prompt
       - Fill the remaining context with *random documents*, far from the query
       #v(8pt)

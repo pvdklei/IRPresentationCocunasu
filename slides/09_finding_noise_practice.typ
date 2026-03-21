@@ -3,11 +3,11 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== Finding 4: Randomness in Practice
+== Experiment 4: Noise in Practice
 
 #set text(size: 16pt)
 
-*So far — oracle setting:*
+*So far - oracle setting:*
 #v(3pt)
 - Gold document #tag-gold is *always* present in the prompt
 - We control exactly which documents are added
@@ -17,7 +17,7 @@
 
 *In practice:*
 #v(3pt)
-- You retrieve top-$k$ documents — a mix of relevant, distracting, and possibly gold
+- You retrieve top-$k$ documents: a mix of relevant, distracting, and possibly gold
 - No guarantee the gold document is even retrieved
 - You don't know which document is which
 

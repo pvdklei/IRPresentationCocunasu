@@ -3,7 +3,7 @@
 // ============================================================
 #import "../helpers.typ": *
 
-== A Taxonomy of Retrieved Documents
+== Document Taxonomy
 
   #grid(
     columns: (1fr, 1fr),
